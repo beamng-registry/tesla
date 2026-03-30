@@ -1,0 +1,51 @@
+name: Build reference package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-reference-package:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    env:
+      REFERENCE_ARCHIVE_URL: https://github.com/beamng-registry/tesla/releases/download/v0.0.0/cyber.7z
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download reference archive
+        run: curl -fL "$REFERENCE_ARCHIVE_URL" -o "$RUNNER_TEMP/cyber.7z"
+
+      - name: Extract reference archive
+        env:
+          REFERENCE_PACKAGE_PASSWORD: ${{ secrets.CYBERTRUCK_FILES_PASSWORD }}
+        run: |
+          if [ -z "$REFERENCE_PACKAGE_PASSWORD" ]; then
+            echo "REFERENCE_PACKAGE_PASSWORD secret is required" >&2
+            exit 1
+          fi
+
+          mkdir -p "$RUNNER_TEMP/reference-package"
+
+          if ! 7z x "$RUNNER_TEMP/cyber.7z" "-o$RUNNER_TEMP/reference-package" "-p$REFERENCE_PACKAGE_PASSWORD" >"$RUNNER_TEMP/7z-extract.log" 2>&1; then
+            cat "$RUNNER_TEMP/7z-extract.log"
+            echo "Failed to extract archive - verify REFERENCE_PACKAGE_PASSWORD is correct" >&2
+            exit 1
+          fi
+
+      - name: Replace LAZ695N Lua scripts
+        run: |
+          cp -R "$GITHUB_WORKSPACE/vehicles/sdd_cyber" "$RUNNER_TEMP/reference-package/vehicles/sdd_cyber"
+
+      - name: Create zip archive
+        run: |
+          cd "$RUNNER_TEMP/reference-package"
+          zip -r "$RUNNER_TEMP/cyber.zip" .
+
+      - name: Upload zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cyber
+          path: ${{ runner.temp }}/cyber.zip
+          if-no-files-found: error
