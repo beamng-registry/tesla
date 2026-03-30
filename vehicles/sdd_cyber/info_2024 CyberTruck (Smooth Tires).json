@@ -24,7 +24,7 @@
   "Population":6000,
   "Power":177,
   "PowerPeakRPM":"3800 - 4400",
-  "Propulsion":"ICE",
+  "Propulsion":"EV",
   "Top Speed":180,
   "Torque":350,
   "TorquePeakRPM":"2900 - 3500",

@@ -52,7 +52,7 @@
     "sdd_cyber_DSE_ABS":"sdd_cyber_DSE_ABS",
     "sdd_cyber_DSE_ESC":"sdd_cyber_DSE_ESC",
     "sdd_cyber_DSE_TC":"sdd_cyber_DSE_TC_electric",
-    "sdd_cyber_DSE_drivemodes":"sdd_cyber_DSE_drivemodes_ICE",
+    "sdd_cyber_DSE_drivemodes":"sdd_cyber_DSE_drivemodes_electricMotor",
     "sdd_cyber_DSE_drivemodes_arsenic":"",
     "sdd_cyber_DSE_drivemodes_default":"sdd_cyber_DSE_drivemodes_default_comfort",
     "sdd_cyber_DSE_drivemodes_offroad":"",
