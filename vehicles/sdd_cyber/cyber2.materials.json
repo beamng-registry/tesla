@@ -1,0 +1,444 @@
+{
+  "interior_001": {
+    "name": "interior_001",
+    "mapTo": "interior.001",
+    "class": "Material",
+    "persistentId": "fb634d10-5e0e-4fd6-9c14-b396c7dad124",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.728518009,
+          0.728510976,
+          0.728510976,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/Interior_Basecolor.png",
+        "metallicMap": "/vehicles/sdd_cyber/textures/Interior_Metallic.png",
+        "roughnessMap": "/vehicles/sdd_cyber/textures/Interior_Normal.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_beddetails": {
+    "name": "sdd_cyber_beddetails",
+    "mapTo": "sdd_cyber_beddetails",
+    "class": "Material",
+    "persistentId": "5e7af7b4-ff0b-44bc-9185-5e6d0e42b2c3",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/sdd_cyber/textures/Exterior_Diffuse.png",
+        "metallicFactor": 0.568000019,
+        "roughnessFactor": 0.69599998
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_bedlights": {
+    "name": "sdd_cyber_bedlights",
+    "mapTo": "sdd_cyber_bedlights",
+    "class": "material",
+    "persistentId": "34bc821d-6021-4609-8ef4-cd64aa1346a2",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_exterior": {
+    "name": "sdd_cyber_exterior",
+    "mapTo": "sdd_cyber_exterior",
+    "class": "Material",
+    "persistentId": "a21c34c6-97d8-4068-8807-2a24165dfa9e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/Exterior_BaseColor.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/sdd_cyber/textures/Exterior_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/Exterior_Normal.png",
+        "normalMapStrength": 2.36999989,
+        "roughnessFactor": 0.708999991
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_fog": {
+    "name": "sdd_cyber_fog",
+    "mapTo": "sdd_cyber_fog",
+    "class": "material",
+    "persistentId": "aa7441ba-2cd0-4c0e-965b-ce5e374f7ad7",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_glass": {
+    "name": "sdd_cyber_glass",
+    "mapTo": "sdd_cyber_glass",
+    "class": "Material",
+    "persistentId": "752811d0-2267-4bf5-9f80-76919ae7acdf",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.466908991,
+          0.466904014,
+          0.466904014,
+          0.909623981
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "Add",
+    "version": 1.5
+  },
+  "sdd_cyber_grille": {
+    "name": "sdd_cyber_grille",
+    "mapTo": "sdd_cyber_grille",
+    "class": "material",
+    "persistentId": "d077c672-013c-4de5-956b-d2207818a95a",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0109601002,
+          0.01096009,
+          0.01096009,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_headlight": {
+    "name": "sdd_cyber_headlight",
+    "mapTo": "sdd_cyber_headlight",
+    "class": "material",
+    "persistentId": "782ab08a-345b-4270-90b3-e75f9c10c5e6",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_leather": {
+    "name": "sdd_cyber_leather",
+    "mapTo": "sdd_cyber_leather",
+    "class": "Material",
+    "persistentId": "c591c3a9-714a-4cb6-badb-0c15151347e1",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.0109601002,
+          0.01096009,
+          0.01096009,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather_BaseColor.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather_Normal.png",
+        "normalMapStrength": 0.180000007,
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather_Roughness.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_nav": {
+    "name": "sdd_cyber_nav",
+    "mapTo": "sdd_cyber_nav",
+    "class": "Material",
+    "persistentId": "30896e5f-79ae-42f2-b055-794b8badf773",
+    "Stages": [
+      {
+        "colorMap": "@sdd_cyber_nav",
+        "diffuseColor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "emissive": true
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_paint1": {
+    "name": "sdd_cyber_paint1",
+    "mapTo": "sdd_cyber_paint1",
+    "class": "Material",
+    "persistentId": "c70af9cb-43f3-451a-a4e7-1825c9547083",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_BaseColor.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0.432999998,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Normal.png",
+        "normalMapStrength": 1.07000005,
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Roughness.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_rooflights": {
+    "name": "sdd_cyber_rooflights",
+    "mapTo": "sdd_cyber_rooflights",
+    "class": "material",
+    "persistentId": "85ffc4df-5c5c-443e-85c9-d2f178f848de",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_roofliner": {
+    "name": "sdd_cyber_roofliner",
+    "mapTo": "sdd_cyber_roofliner",
+    "class": "Material",
+    "persistentId": "d16e6ca7-c0ec-4056-96f5-78e7eea7487f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.516269028,
+          0.516264021,
+          0.516264021,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_roofliner_BaseColor.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_roofliner_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_roofliner_Normal.png",
+        "normalMapStrength": 0.310000002,
+        "roughnessFactor": 0.834999979,
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_roofliner_Roughness.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sdd_cyber_signal_L": {
+    "name": "sdd_cyber_signal_L",
+    "mapTo": "sdd_cyber_signal_L",
+    "class": "material",
+    "persistentId": "c2e30474-24a8-402e-a8d4-969248fa053a",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_signal_R": {
+    "name": "sdd_cyber_signal_R",
+    "mapTo": "sdd_cyber_signal_R",
+    "class": "material",
+    "persistentId": "23fe5120-13ec-4f9e-9d36-51283a14ed38",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_windshield": {
+    "name": "sdd_cyber_windshield",
+    "mapTo": "sdd_cyber_windshield",
+    "class": "Material",
+    "persistentId": "0b24dd4c-d107-4b3b-83e1-7d561d54b50a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/sdd_cyber_glass.png",
+        "metallicFactor": 1,
+        "opacityFactor": 0.67900002,
+        "opacityMap": "/vehicles/sdd_cyber/textures/RefractExterior_Opacity_alt1.png",
+        "roughnessFactor": 0.412
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/sdd_cyber/textures/RefractExterior_BaseColor.png",
+        "metallicFactor": 1,
+        "opacityFactor": null,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 66,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  }
+}

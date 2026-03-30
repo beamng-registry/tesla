@@ -1,0 +1,170 @@
+          
+{
+"sdd_cyber_tailgate_ramp": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tailgate Ramp",
+        "value":500,
+    },
+    "slotType" : "sdd_cyber_tailgate_ramp",
+	"slots": [
+		["type", "default", "description"]		
+		["sdd_cyber_tailgate_ramp2", "sdd_cyber_tailgate_ramp2", "Tailgate Ramp2"],
+	],	
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_tailgate_ramp", ["sdd_cyber_tailgate_ramp"],[],{"pos":{"x":0.0, "y":0.0, "z":0.0}}],
+    ],
+	
+		"slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],	
+            ["trmp1l", "tailgateL", true, true, 0.0, 3500000, 100000000000, 500 ["rtrmp1l","t4l",{"inputSource":"ramp","inLimit":0,"outLimit":9.0,"inRate":1,"outRate":1,"inputFactor":1.0}],],	
+			["trmp2l", "tailgateL", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["trmp4l", "tailgateL", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			
+			 ["trmp1r", "tailgateR", true, true, 0.0, 3500000, 100000000000, 500],	
+			  ["trmp2r", "tailgateR", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["trmp4r", "tailgateR", true, true, 0.0, 3500000, 100000000000, 1000000],
+
+			["trmp1", "tailgate", true, true, 0.0, 3500000, 100000000000, 500],	
+			["trmp2", "tailgate", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["trmp4", "tailgate", true, true, 0.0, 3500000, 100000000000, 1000000],	
+    ],
+	"rails": {
+		"tailgateL1":{"links:":["trmp1l", "trmp2l", "trmp4l", ], "looped":false, "capped":true}
+		"tailgateR1":{"links:":["trmp1r", "trmp2r", "trmp4r", ], "looped":false, "capped":true}
+		"tailgate1":{"links:":["trmp1", "trmp2", "trmp4", ], "looped":false, "capped":true}
+		},
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--TAILGATE--
+         {"collision":true},
+         {"selfCollision":false},
+         {"group":["sdd_cyber_tailgate_ramp"]},
+         {"nodeWeight":3.5},
+         
+         {"nodeWeight":2.0},
+         ["trmp1r", -0.77307, 2.91968, 1.41100],
+         ["trmp1", 0.00000, 2.91968, 1.41100,{"selfCollision":false}],
+         ["trmp1l", 0.77307, 2.91968, 1.41100],
+         {"nodeWeight":2.0},
+         
+
+         
+         ["trmp2r", -0.76119, 2.84708, 1.07007],
+         ["trmp2", 0.00000, 2.84708, 1.07007],
+         ["trmp2l", 0.76119, 2.84708, 1.07007],
+         
+
+         
+         ["trmp4r", -0.74681, 2.79751, 0.76981],
+         ["trmp4", 0.00000, 2.79751, 0.76981],
+         ["trmp4l", 0.74681, 2.79751, 0.76981],
+         
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"group":""},
+         {"nodeWeight":2.0},
+         ["trmp3", 0.00000, 2.66274, 1.11965],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TAILGATE--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1077390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+          //tailgate main shape
+          {"deformLimitExpansion":1.2},
+          
+          ["trmp1r","trmp1"],
+          ["trmp1","trmp1l"],
+          
+
+          
+          ["trmp2r","trmp2"],
+          ["trmp2","trmp2l"],
+          
+
+          
+          ["trmp1r","trmp2r"],
+          ["trmp1","trmp2"],
+          ["trmp1l","trmp2l"],
+          
+
+            
+            
+            ["trmp4l", "trmp4"],
+            ["trmp4", "trmp4r"],
+            
+            
+            ["trmp4r", "trmp2r"],
+            ["trmp4", "trmp2"],
+            ["trmp4l", "trmp2l"],
+
+                      ["trmp1l", "trmp2"],
+            ["trmp1r", "trmp2"],
+            ["trmp4r", "trmp2"],
+            ["trmp2", "trmp4l"],
+            ["trmp2l", "trmp4"],
+            ["trmp4", "trmp2r"],
+            ["trmp2r", "trmp1"],
+            ["trmp1", "trmp2l"],
+			
+			
+		{"beamSpring":12013390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+              ["trmp1l", "trmp4r"],
+            ["trmp4l", "trmp1r"],
+
+          //rigidifier
+          {"beamSpring":2213390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+          
+          ["trmp1r","trmp3"],
+          ["trmp1","trmp3"],
+          ["trmp1l","trmp3"],
+          
+          
+          ["trmp2r","trmp3"],
+          ["trmp2","trmp3"],
+          ["trmp2l","trmp3"],
+          
+            
+            ["trmp4l", "trmp3"],
+            ["trmp4", "trmp3"],
+            ["trmp4r", "trmp3"],
+            
+
+
+          
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailgate
+            {"groundModel":"metal"},
+            {"group":"sdd_cyber_tailgate_ramp"},
+            {"dragCoef":7.5},
+            ["trmp2rr","trmp1rr","trmp2r"],
+            ["trmp1rr","trmp1r","trmp2r"],
+            ["trmp2r","trmp1r","trmp2"],
+            ["trmp1r","trmp1","trmp2"],
+            ["trmp1l","trmp2l","trmp2"],
+            ["trmp1l","trmp2","trmp1"],
+            ["trmp1ll","trmp2ll","trmp2l"],
+            ["trmp1ll","trmp2l","trmp1l"],
+            ["trmp4ll", "trmp4l", "trmp2ll"],
+            ["trmp4l", "trmp2l", "trmp2ll"],
+            ["trmp4l", "trmp4", "trmp2l"],
+            ["trmp2l", "trmp4", "trmp2"],
+            ["trmp4", "trmp4r", "trmp2"],
+            ["trmp4r", "trmp2r", "trmp2"],
+            ["trmp4r", "trmp4rr", "trmp2r"],
+            ["trmp4rr", "trmp2rr", "trmp2r"],
+
+            {"dragCoef":0},
+    ],
+},
+}

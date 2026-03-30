@@ -1,0 +1,41 @@
+{
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -0.58,
+      -1.41,
+      -0.3099
+    ],
+    [
+      1.68,
+      3.476,
+      1.42
+    ]
+  ],
+  "Braking G":0.99,
+  "Config Type":"Factory",
+  "Configuration":"2024 CyberTruck",
+  "Description":"With a hardened stainless steel body. The 4x4 EV Tesla Cybertruck is as durable as it is bulky",
+  "Drivetrain":"4WD",
+  "Fuel Type":"EV",
+  "Induction Type":"NA",
+  "Off-Road Score":46,
+  "Performance Class":"4",
+  "Population":6000,
+  "Power":177,
+  "PowerPeakRPM":"3800 - 4400",
+  "Propulsion":"ICE",
+  "Top Speed":180,
+  "Torque":350,
+  "TorquePeakRPM":"2900 - 3500",
+  "Transmission":"Automatic",
+  "Value":64999,
+  "Weight":6200,
+  "Weight/Power":11.69491525,
+  "Years":{
+    "max":2024,
+    "min":2029
+  },
+  "defaultPaintName1":"Matte Black",
+  "defaultPaintName2":"Matte Black"
+}

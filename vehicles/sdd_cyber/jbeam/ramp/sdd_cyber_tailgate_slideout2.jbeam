@@ -1,0 +1,161 @@
+          
+{
+"sdd_cyber_tailgate_ramp2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tailgate Ramp2",
+        "value":500,
+    },
+    "slotType" : "sdd_cyber_tailgate_ramp2",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_tailgate_ramp2", ["sdd_cyber_tailgate_ramp2"],[],{"pos":{"x":0.0, "y":0.0, "z":0.0}}],
+    ],
+	
+		"slidenodes": [
+        ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],	
+            ["rtrmp1l", "tailgateL1", true, true, 0.0, 3500000, 100000000000, 500],
+			["rtrmp2l", "tailgateL1", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["rtrmp4l", "tailgateL1", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			
+			["rtrmp1r", "tailgateR1", true, true, 0.0, 3500000, 100000000000, 500],	
+			  ["rtrmp2r", "tailgateR1", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["rtrmp4r", "tailgateR1", true, true, 0.0, 3500000, 100000000000, 1000000],
+
+			["rtrmp1", "tailgate1", true, true, 0.0, 3500000, 100000000000, 500],	
+			["rtrmp2", "tailgate1", true, true, 0.0, 3500000, 100000000000, 1000000],	
+			["rtrmp4", "tailgate1", true, true, 0.0, 3500000, 100000000000, 1000000],	
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--TAILGATE--
+         {"collision":true},
+         {"selfCollision":false},
+         {"group":["sdd_cyber_tailgate_ramp2"]},
+         {"nodeWeight":3.5},
+         
+         {"nodeWeight":2.0},
+         ["rtrmp1r", -0.77307, 2.92885, 1.41100],
+         ["rtrmp1", 0.00000, 2.92885, 1.41100,{"selfCollision":false}],
+         ["rtrmp1l", 0.77307, 2.92885, 1.41100],
+         {"nodeWeight":2.0},
+         
+
+         
+         ["rtrmp2r", -0.76119, 2.85625, 1.07007],
+         ["rtrmp2", 0.00000, 2.85625, 1.07007],
+         ["rtrmp2l", 0.76119, 2.85625, 1.07007],
+         
+
+         
+         ["rtrmp4r", -0.74681, 2.80668, 0.76981],
+         ["rtrmp4", 0.00000, 2.80668, 0.76981],
+         ["rtrmp4l", 0.74681, 2.80668, 0.76981],
+         
+         //rigidifier
+         {"selfCollision":false},
+         {"collision":false},
+         {"group":""},
+         {"nodeWeight":2.0},
+         ["rtrmp3", 0.00000, 2.67191, 1.11965],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TAILGATE--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1077390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+          //tailgate main shape
+          {"deformLimitExpansion":1.2},
+          
+          ["rtrmp1r","rtrmp1"],
+          ["rtrmp1","rtrmp1l"],
+          
+
+          
+          ["rtrmp2r","rtrmp2"],
+          ["rtrmp2","rtrmp2l"],
+          
+
+          
+          ["rtrmp1r","rtrmp2r"],
+          ["rtrmp1","rtrmp2"],
+          ["rtrmp1l","rtrmp2l"],
+          
+
+            
+            
+            ["rtrmp4l", "rtrmp4"],
+            ["rtrmp4", "rtrmp4r"],
+            
+            
+            ["rtrmp4r", "rtrmp2r"],
+            ["rtrmp4", "rtrmp2"],
+            ["rtrmp4l", "rtrmp2l"],
+
+                      ["rtrmp1l", "rtrmp2"],
+            ["rtrmp1r", "rtrmp2"],
+            ["rtrmp4r", "rtrmp2"],
+            ["rtrmp2", "rtrmp4l"],
+            ["rtrmp2l", "rtrmp4"],
+            ["rtrmp4", "rtrmp2r"],
+            ["rtrmp2r", "rtrmp1"],
+            ["rtrmp1", "rtrmp2l"],
+			
+			
+		{"beamSpring":12013390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+              ["rtrmp1l", "rtrmp4r"],
+            ["rtrmp4l", "rtrmp1r"],
+
+          //rigidifier
+          {"beamSpring":2213390,"beamDamp":244.4},
+          {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+          
+          ["rtrmp1r","rtrmp3"],
+          ["rtrmp1","rtrmp3"],
+          ["rtrmp1l","rtrmp3"],
+          
+          
+          ["rtrmp2r","rtrmp3"],
+          ["rtrmp2","rtrmp3"],
+          ["rtrmp2l","rtrmp3"],
+          
+            
+            ["rtrmp4l", "rtrmp3"],
+            ["rtrmp4", "rtrmp3"],
+            ["rtrmp4r", "rtrmp3"],
+            
+
+
+          
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailgate
+            {"groundModel":"metal"},
+            {"group":"sdd_cyber_tailgate_ramp2"},
+            {"dragCoef":7.5},
+            ["rtrmp2rr","rtrmp1rr","rtrmp2r"],
+            ["rtrmp1rr","rtrmp1r","rtrmp2r"],
+            ["rtrmp2r","rtrmp1r","rtrmp2"],
+            ["rtrmp1r","rtrmp1","rtrmp2"],
+            ["rtrmp1l","rtrmp2l","rtrmp2"],
+            ["rtrmp1l","rtrmp2","rtrmp1"],
+            ["rtrmp1ll","rtrmp2ll","rtrmp2l"],
+            ["rtrmp1ll","rtrmp2l","rtrmp1l"],
+            ["rtrmp4ll", "rtrmp4l", "rtrmp2ll"],
+            ["rtrmp4l", "rtrmp2l", "rtrmp2ll"],
+            ["rtrmp4l", "rtrmp4", "rtrmp2l"],
+            ["rtrmp2l", "rtrmp4", "rtrmp2"],
+            ["rtrmp4", "rtrmp4r", "rtrmp2"],
+            ["rtrmp4r", "rtrmp2r", "rtrmp2"],
+            ["rtrmp4r", "rtrmp4rr", "rtrmp2r"],
+            ["rtrmp4rr", "rtrmp2rr", "rtrmp2r"],
+
+            {"dragCoef":0},
+    ],
+},
+}

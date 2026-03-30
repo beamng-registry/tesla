@@ -1,0 +1,28 @@
+{
+"sdd_cyber_steer": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Yoke",
+        "value":550,
+    },
+    "slotType" : "sdd_cyber_steer",
+    "props": [
+        ["func",     "mesh",           "idRef:","idX:","idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "sdd_cyber_steer", "int_strw","dsh2l","dsh2r",        {"x":179.340, "y":-38.302, "z":0.435}, {"x":-0.0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1, {"baseTranslation":{"x":0.051,"y":-0.018,"z":0.145}}],
+    ],
+},
+"sdd_cyber_steer_alt": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel",
+        "value":550,
+    },
+    "slotType" : "sdd_cyber_steer",
+    "props": [
+        ["func",     "mesh",           "idRef:","idX:","idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "sdd_cyber_steer_alt", "int_strw","dsh2l","dsh2r",        {"x":179.157, "y":-31.425, "z":2.945}, {"x":-0.0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1, {"baseTranslation":{"x":0.093,"y":0.019,"z":0.155}}],
+    ],
+},
+}

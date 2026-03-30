@@ -1,0 +1,265 @@
+{
+  "sdd_cyber_fabric": {
+    "name": "sdd_cyber_fabric",
+    "mapTo": "sdd_cyber_fabric",
+    "class": "Material",
+    "persistentId": "bbaee32c-4e8e-44a2-b093-16101022b8ff",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.659413993,
+          0.65940702,
+          0.65940702,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_fabric_BaseColor.png",
+        "metallicMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_fabric_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_fabric_Normal.png",
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_fabric_Roughness.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_leather2": {
+    "name": "sdd_cyber_leather2",
+    "mapTo": "sdd_cyber_leather2",
+    "class": "Material",
+    "persistentId": "b75cefa3-d541-4fbd-ad3f-54e2be66f08a",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather2_BaseColor.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather2_Normal.png",
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_leather2_Roughness.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_leather3": {
+    "name": "sdd_cyber_leather3",
+    "mapTo": "sdd_cyber_leather3",
+    "class": "Material",
+    "persistentId": "48608a03-cb52-4fcb-81b0-bf498571a7d5",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.452100992,
+          0.452095985,
+          0.452095985,
+          1
+        ],
+        "metallicFactor": 0.879000008,
+        "normalMap": "/vehicles/sdd_cyber/textures/leather_mix_2.png",
+        "roughnessFactor": 0.617999971
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_logo": {
+    "name": "sdd_cyber_logo",
+    "mapTo": "sdd_cyber_logo",
+    "class": "Material",
+    "persistentId": "aa09bb0b-4470-4a2e-979c-49017f39fc41",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/sdd_cyber/textures/tesla-logo-png-pic-9.png",
+        "diffuseColor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "alphaRef": 114,
+    "alphaTest": true
+  },
+  "sdd_cyber_navoverlay": {
+    "name": "sdd_cyber_navoverlay",
+    "mapTo": "sdd_cyber_navoverlay",
+    "class": "Material",
+    "persistentId": "c8281b95-f724-42f7-9c9d-82fc076a6407",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/sdd_cyber/textures/sdd_cyber_screen.png",
+        "diffuseColor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "emissive": true,
+        "opacityMap": "/vehicles/sdd_cyber/textures/sdd_cyber_screen.png"
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null
+      }
+    ],
+    "alphaRef": 22,
+    "alphaTest": true,
+    "translucentBlendOp": "None"
+  },
+  "sdd_cyber_perf": {
+    "name": "sdd_cyber_perf",
+    "mapTo": "sdd_cyber_perf",
+    "class": "Material",
+    "persistentId": "9d17321b-acb5-405a-9fdf-6a76aca4bfba",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.437292993,
+          0.437287986,
+          0.437287986,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_perf_BaseColor.png",
+        "metallicMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_perf_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_perf_Normal.png",
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_perf_Roughness.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_speed": {
+    "name": "sdd_cyber_speed",
+    "mapTo": "sdd_cyber_speed",
+    "class": "Material",
+    "persistentId": "ada1ff95-18ae-4317-a1a1-fd1a8e584283",
+    "Stages": [
+      {
+        "colorMap": "@sdd_cyber_speed",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha"
+  },
+  "sdd_cyber_symbols": {
+    "name": "sdd_cyber_symbols",
+    "mapTo": "sdd_cyber_symbols",
+    "class": "Material",
+    "persistentId": "84463ab0-6f93-4c69-b10d-55b4b6677b79",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/sdd_cyber/textures/maz_miata_94_symbols_diff_2d10aa60-d307-4e9e-bd35-10edad8a51ef.dds",
+        "emissive": true
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      },
+      {
+        "emissive": null
+      }
+    ],
+    "alphaRef": 28,
+    "alphaTest": true
+  },
+  "sdd_cyber_tlightsalt_on_intense": {
+    "name": "sdd_cyber_tlightsalt_on_intense",
+    "mapTo": "sdd_cyber_tlightsalt_on_intense",
+    "class": "Material",
+    "persistentId": "48e25688-cb47-45a2-b99a-a0b68ee5d6d2",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/redgrad.png",
+        "emissiveFactor": [
+          7.05490303,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/sdd_cyber/textures/redgrad.png"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  }
+}

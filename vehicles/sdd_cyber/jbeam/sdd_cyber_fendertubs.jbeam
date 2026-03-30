@@ -1,0 +1,26 @@
+{
+"sdd_cyber_fendertub_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Right Fender Tub",
+        "value":350,
+    },
+    "slotType" : "sdd_cyber_fendertub_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_fendertub_R", ["sdd_cyber_fender_R"]],
+    ],
+},
+"sdd_cyber_fendertub_L": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Fender Tub",
+        "value":350,
+    },
+    "slotType" : "sdd_cyber_fendertub_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_fendertub_L", ["sdd_cyber_fender_L"]],
+    ],
+},
+}

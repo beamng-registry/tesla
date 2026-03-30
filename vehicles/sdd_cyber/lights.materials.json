@@ -1,0 +1,224 @@
+{
+  "sdd_cyber_lights": {
+    "name": "sdd_cyber_lights",
+    "mapTo": "sdd_cyber_lights",
+    "class": "Material",
+    "persistentId": "564d4aba-7365-4bec-8dae-8d9c8e952186",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.876599014,
+          0.876590014,
+          0.876590014,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0.867999971
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_lights_on": {
+    "name": "sdd_cyber_lights_on",
+    "mapTo": "sdd_cyber_lights_on",
+    "class": "Material",
+    "persistentId": "16d0a05f-95f1-4ca8-8a00-fab6eef08708",
+    "Stages": [
+      {
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          5.88235283
+        ]
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_cyber_lights_on_intense": {
+    "name": "sdd_cyber_lights_on_intense",
+    "mapTo": "sdd_cyber_lights_on_intense",
+    "class": "Material",
+    "persistentId": "ffaf25bb-7c7a-4c4b-ae9c-53b5073c31a5",
+    "Stages": [
+      {
+        "emissiveFactor": [
+          3.92156911,
+          3.92156911,
+          11.7647066
+        ]
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_cyber_lights_signal": {
+    "name": "sdd_cyber_lights_signal",
+    "mapTo": "sdd_cyber_lights_signal",
+    "class": "Material",
+    "persistentId": "d5a5ad10-1c0c-46a4-a281-e37d3abbe6f7",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.50347501,
+          0,
+          1
+        ],
+        "emissiveFactor": [
+          7.51372623,
+          1.61568606,
+          0.160784006
+        ]
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_cyber_tlights": {
+    "name": "sdd_cyber_tlights",
+    "mapTo": "sdd_cyber_tlights",
+    "class": "Material",
+    "persistentId": "f29df6bd-d1c9-4477-bdf7-ad68952ec976",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.595246017,
+          0.131017998,
+          0.131017998,
+          1
+        ],
+        "metallicFactor": 0.59799999,
+        "roughnessFactor": 0.619000018
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "version": 1.5
+  },
+  "sdd_cyber_tlights_on": {
+    "name": "sdd_cyber_tlights_on",
+    "mapTo": "sdd_cyber_tlights_on",
+    "class": "Material",
+    "persistentId": "b1ab01b4-152e-401b-bdd7-93e9f379fd9b",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "emissiveFactor": [
+          7.84313822,
+          0,
+          0
+        ]
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "sdd_cyber_tlights_on_intense": {
+    "name": "sdd_cyber_tlights_on_intense",
+    "mapTo": "sdd_cyber_tlights_on_intense",
+    "class": "Material",
+    "persistentId": "b482ba2d-26f4-4cbe-861c-1bd9b69cfcab",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "emissiveFactor": [
+          15.6862745,
+          0,
+          0
+        ]
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

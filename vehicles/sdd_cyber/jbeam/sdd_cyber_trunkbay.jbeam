@@ -1,0 +1,191 @@
+
+{
+"sdd_cyber_frunk": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Frunk Insert",
+        "value":450,
+    },
+    "slotType" : "sdd_cyber_frunk",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_frunk", ["sdd_cyber_frunk_panel"]],
+		 
+		 {"deformGroup":"frunkbreak", "deformMaterialBase":"RRpbrMatteBlack", "deformMaterialDamaged":"glass_invisible"},
+         ["sdd_cyber_frunktrim", ["sdd_cyber_body", "sdd_cyber_frunk_panel"]],
+         {"deformGroup":""},
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--FRONT valance--
+         {"collision":true}
+         {"selfCollision":false},
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+
+         {"group":"sdd_cyber_frunk_panel"},
+         {"nodeWeight":0.2},
+            ["frk1", 0.45784, -2.78769, 0.73364],
+            ["frk2", -0.45784, -2.78769, 0.73364],
+            ["frk3", -0.00144, -2.82741, 0.73364],
+            ["frk4", 0.45784, -2.31790, 0.73364],
+            ["frk5", -0.45784, -2.31790, 0.73364],
+            ["frk6", -0.00144, -2.35762, 0.73364],
+            ["frk7", 0.61196, -2.26609, 1.20349],
+            ["frk8", -0.61196, -2.26609, 1.20349],
+            ["frk9", -0.00193, -2.26468, 1.20349],
+            ["frk10", 0.56169, -2.80576, 0.89719],
+            ["frk11", -0.56169, -2.80576, 0.89719],
+            ["frk12", -0.00177, -2.85057, 0.89719],
+
+
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT valance--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+
+          //main shape
+          {"beamSpring":101000,"beamDamp":20},
+          {"beamDeform":20000,"beamStrength":59000},
+          {"deformLimitExpansion":1.2},
+            ["frk3", "frk2"],
+            ["frk2", "frk5"],
+            ["frk5", "frk6"],
+            ["frk6", "frk3"],
+            ["frk3", "frk5"],
+            ["frk2", "frk6"],
+            ["frk6", "frk4"],
+            ["frk4", "frk1"],
+            ["frk1", "frk3"],
+            ["frk3", "frk4"],
+            ["frk1", "frk6"],
+            ["frk1", "frk10"],
+            ["frk10", "frk7"],
+            ["frk7", "frk4"],
+            ["frk10", "frk4"],
+            ["frk1", "frk7"],
+            ["frk8", "frk11"],
+            ["frk11", "frk2"],
+            ["frk5", "frk8"],
+            ["frk8", "frk2"],
+            ["frk11", "frk5"],
+            ["frk6", "frk9"],
+            ["frk9", "frk8"],
+            ["frk8", "frk6"],
+            ["frk5", "frk9"],
+            ["frk9", "frk7"],
+            ["frk7", "frk6"],
+            ["frk9", "frk4"],
+            ["frk12", "frk10"],
+            ["frk12", "frk3"],
+            ["frk3", "frk10"],
+            ["frk1", "frk12"],
+            ["frk12", "frk2"],
+            ["frk11", "frk3"],
+            ["frk12", "frk11"],
+
+
+
+          //crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":9750,"beamStrength":"FLT_MAX"},
+            ["frk9", "frk5"],
+            ["frk9", "frk4"],
+            ["frk7", "frk5"],
+            ["frk8", "frk4"],
+
+            ["frk8", "frk3"],
+            ["frk7", "frk3"],
+            ["frk11", "frk6"],
+            ["frk10", "frk6"],
+            ["frk8", "frk12"],
+            ["frk12", "frk7"],
+            ["frk10", "frk9"],
+            ["frk11", "frk9"],
+
+
+          //attach
+          {"beamSpring":201000,"beamDamp":40},
+          {"beamDeform":4750,"beamStrength":12500},
+          {"breakGroup":"frunkpanel_a_R"},
+          {"deformGroup":"frunkbreak", "deformationTriggerRatio":0.01}
+                      ["frk5", "f12rr"],
+            ["frk2", "bb2r"],
+            ["frk11", "bb2r"],
+            ["frk8", "f12rr"],
+            ["frk8", "bb2r"],
+            ["frk2", "bb2"],
+
+
+		
+		
+          {"breakGroup":"frunkpanel_a_L"},
+          {"deformGroup":"frunkbreak", "deformationTriggerRatio":0.01}
+                       ["frk1", "bb2"],
+            ["frk1", "bb2l"],
+            ["frk10", "bb2l"],
+            ["frk4", "f12ll"],
+            ["frk7", "f12ll"],
+            ["frk7", "bb2l"],
+            ["frk10", "f12ll"],
+
+
+		 
+		 
+          {"deformGroup":""},
+          {"beamDeform":2150,"beamStrength":12500},
+          {"breakGroup":"frunkpanel_M1"},
+          {"deformGroup":"frunkpanelflashers_break", "deformationTriggerRatio":0.01}
+          
+		            ["frk3", "bb2r"],
+            ["frk3", "bb2l"],
+            ["frk3", "bb2"],
+            ["frk12", "bb2r"],
+            ["frk12", "bb2l"],
+            ["frk12", "bb2"],
+
+		
+          {"breakGroup":"frunkpanel_M2"},
+         
+		 
+		 
+          {"deformGroup":""}
+
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+        {"triangleType":"NORMALTYPE"},
+            //front valance
+            {"groundModel":"plastic"},
+            {"dragCoef":4},
+            //{"liftCoef":10},
+            {"group":"sdd_cyber_frunk_panel"},
+
+            ["frk8", "frk5", "frk6"],
+            ["frk6", "frk9", "frk8"],
+            ["frk6", "frk4", "frk7"],
+            ["frk7", "frk9", "frk6"],
+            ["frk7", "frk4", "frk1"],
+            ["frk1", "frk10", "frk7"],
+            ["frk11", "frk2", "frk5"],
+            ["frk5", "frk8", "frk11"],
+            ["frk5", "frk2", "frk3"],
+            ["frk3", "frk6", "frk5"],
+            ["frk6", "frk3", "frk1"],
+            ["frk1", "frk4", "frk6"],
+
+            ["frk12", "frk3", "frk2"],
+            ["frk12", "frk2", "frk11"],
+            ["frk1", "frk3", "frk12"],
+            ["frk1", "frk12", "frk10"],
+
+		  
+		  
+            {"liftCoef":""},
+            {"group":""},
+    ],
+},
+}

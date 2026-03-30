@@ -1,0 +1,236 @@
+{
+"sdd_cyber_bedcover": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Bed Cover",
+        "value":450,
+    },
+    "slotType" : "sdd_cyber_bedcover",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["sdd_cyber_bedcover", ["sdd_cyber_bedcover"], [],{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"collision":true},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"nodeWeight":0.47},
+         {"frictionCoef":0.5},
+         {"group":"sdd_cyber_bedcover"},
+         {"selfCollision":true},
+         ["bc1r", -0.85765, 2.81308, 1.42506],
+         ["bc1", 0.00000, 2.81623, 1.42413,{"selfCollision":false}],
+         ["bc1l", 0.85765, 2.81308, 1.42506],
+
+         ["bc2r", -0.78857, 2.12975, 1.51704],
+         ["bc2", 0.00000, 2.12975, 1.51704],
+         ["bc2l", 0.78857, 2.12975, 1.51704],
+
+         ["bc3r", -0.71959, 1.43810, 1.61015],
+         ["bc3", 0.00000, 1.43810, 1.61015],
+         ["bc3l", 0.71959, 1.43810, 1.61015],
+
+         ["bc5r", -0.67119, 0.83052, 1.69194],
+         ["bc5", 0.00000, 0.83052, 1.69194],
+         ["bc5l", 0.67119, 0.83052, 1.69194],
+         //rigidifier
+         {"collision":false},
+         {"selfCollision":false},
+         {"group":""},
+         ["bc4", 0.00000, 1.74550, 1.23302],
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--bedcover--
+          {"beamSpring":376940,"beamDamp":37.6},
+          {"beamDeform":14000,"beamStrength":28000},
+          {"deformLimitExpansion":1.2},
+          ["bc1r","bc1"],
+          ["bc1l","bc1"],
+          ["bc2r","bc2"],
+          ["bc2l","bc2"],
+          ["bc3r","bc3"],
+          ["bc3l","bc3"],
+
+          ["bc1r","bc2r"],
+          ["bc1","bc2"],
+          ["bc1l","bc2l"],
+
+          ["bc2r","bc3r"],
+          ["bc2","bc3"],
+          ["bc2l","bc3l"],
+
+          ["bc3r", "bc5r"],
+          ["bc5r", "bc5"],
+          ["bc5", "bc5l"],
+          ["bc5l", "bc3l"],
+          ["bc3", "bc5"],
+
+          //cross
+          {"deformLimitExpansion":""},
+          ["bc1r","bc2"],
+          ["bc1l","bc2"],
+          ["bc2r","bc1"],
+          ["bc2l","bc1"],
+          ["bc2r","bc3"],
+          ["bc2l","bc3"],
+          ["bc3r","bc2"],
+          ["bc3l","bc2"],
+
+          ["bc5r", "bc3"],
+          ["bc3r", "bc5"],
+          ["bc5", "bc3l"],
+          ["bc3", "bc5l"],
+
+          {"beamDeform":3500,"beamStrength":28000},
+          //rigid
+          {"disableMeshBreaking":true},
+          ["bc1r","bc1l"],
+          ["bc2r","bc2l"],
+          ["bc3r","bc3l"],
+
+          ["bc1r","bc3r"],
+          ["bc1","bc3"],
+          ["bc1l","bc3l"],
+
+
+          {"beamDeform":2100,"beamStrength":28000},
+          //rigidifier
+          ["bc1r","bc4"],
+          ["bc1","bc4"],
+          ["bc1l","bc4"],
+          ["bc2r","bc4"],
+          ["bc2","bc4"],
+          ["bc2l","bc4"],
+          ["bc3r","bc4"],
+          ["bc3","bc4"],
+          ["bc3l","bc4"],
+
+            ["bc5r", "bc4"],
+            ["bc5", "bc4"],
+            ["bc5l", "bc4"],
+
+          {"disableMeshBreaking":false},
+
+          //attach
+          {"beamDeform":4100,"beamStrength":6500},
+          {"breakGroup":"bedcover_RR"},
+            ["bc1r", "q11rr"],
+            ["bc2r", "q10rr"],
+            ["bc2r", "q11rr"],
+            ["bc1r", "q10rr"],
+            ["q11rr", "bc2"],
+            ["bc1", "q10rr"],
+
+          {"breakGroup":"bedcover_RM"},
+            ["bc1", "r4"],
+            ["bc1l", "r4"],
+            ["bc1r", "r4"],
+
+          {"breakGroup":"bedcover_RL"},
+            ["bc1l", "q11ll"],
+            ["q10ll", "bc2l"],
+            ["bc2l", "q11ll"],
+            ["bc1l", "q10ll"],
+
+            ["bc1", "q10ll"],
+            ["q11ll", "bc2"],
+
+          {"breakGroup":"bedcover_MR"},
+            ["bc2r", "q9rr"],
+            ["bc3r", "q10rr"],
+            ["bc3", "q10rr"],
+            ["bc2", "q9rr"],
+
+          {"breakGroup":"bedcover_MM"},
+            ["bc2", "rtb1rr"],
+            ["rtb1ll", "bc2"],
+            ["bc3", "r3ll"],
+            ["r3rr", "bc3"],
+            ["bc3", "rf6l"],
+            ["bc3", "rf6r"],
+            ["bc3r", "rf6r"],
+            ["bc3l", "rf6l"],
+            ["bc3", "rf6ll"],
+            ["bc3", "rf6rr"],
+
+          {"breakGroup":"bedcover_ML"},
+            ["bc2l", "q9ll"],
+            ["q10ll", "bc3l"],
+            ["q10ll", "bc3"],
+            ["q9ll", "bc2"],
+
+          {"breakGroup":"bedcover_FR"},
+            ["bc3r", "q9rr"],
+            ["bc5r", "rf6rr"],
+            ["bc5r", "q9rr"],
+            ["bc3r", "rf6rr"],
+
+
+          {"breakGroup":"bedcover_FL"},
+              ["bc3l", "q9ll"],
+            ["bc5l", "rf6ll"],
+            ["bc5l", "q9ll"],
+            ["bc3l", "rf6ll"],
+
+
+          {"breakGroup":""},
+          {"beamSpring":1880,"beamDamp":100},
+          {"beamDeform":4000,"beamStrength":10000},
+
+
+          //--SUPPORT BEAMS--
+          {"beamType":"|SUPPORT","beamLongBound":24},
+          {"beamSpring":376940,"beamDamp":37.6},
+          {"beamDeform":2835,"beamStrength":57400},
+          ["bc3r","bd1rr"],
+          ["bc3l","bd1ll"],
+          ["bc3r","bdc1rr"],
+          ["bc3l","bdc1ll"],
+
+          ["bc2r","bd3rr"],
+          ["bc2l","bd3ll"],
+          ["bc2r","bdc2rr"],
+          ["bc2l","bdc2ll"],
+          ["bc2r","bdc3rr"],
+          ["bc2l","bdc3ll"],
+          //
+          ["bc1r","bd5rr"],
+          ["bc1l","bd5ll"],
+          ["bc1r","ibd5rr"],
+          ["bc1l","ibd5ll"],
+          ["bc1r","bdc4rr"],
+          ["bc1l","bdc4ll"],
+
+          {"optional":true},
+          ["bc1r","t1"],
+          ["bc1l","t1"],
+          ["bc1","t2"],
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"group":"sdd_cyber_bedcover"},
+            {"groundModel":"plastic"},
+            {"dragCoef":12},
+            ["bc3l","bc2l","bc2"],
+            ["bc3l","bc2","bc3"],
+            ["bc2r","bc3r","bc2"],
+            ["bc3r","bc3","bc2"],
+            ["bc2l","bc1l","bc1"],
+            ["bc2l","bc1","bc2"],
+            ["bc1r","bc2r","bc1"],
+            ["bc2r","bc2","bc1"],
+
+            ["bc3r", "bc5r", "bc3"],
+            ["bc3", "bc5r", "bc5"],
+            ["bc3", "bc5", "bc3l"],
+            ["bc3l", "bc5", "bc5l"],
+
+            {"dragCoef":0},
+    ],
+},
+}

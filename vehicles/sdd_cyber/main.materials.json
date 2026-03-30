@@ -1,0 +1,40 @@
+{
+  "sdd_cyber_carpet": {
+    "name": "sdd_cyber_carpet",
+    "mapTo": "sdd_cyber_carpet",
+    "class": "Material",
+    "persistentId": "b4b93db8-4c29-451c-834e-6b927f3c154f",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.402740002,
+          0.402736008,
+          0.402736008,
+          1
+        ],
+        "baseColorMap": "/vehicles/sdd_cyber/textures/28211d0561b8d4d6ceabf2bcf0b6ac8a--carpet-flooring-carpets.jpg",
+        "metallicFactor": 0.409000009,
+        "roughnessFactor": 0.975000024
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

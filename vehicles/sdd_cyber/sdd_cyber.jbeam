@@ -1,0 +1,174 @@
+{
+"sdd_cyber": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Tesla Cybertruck",
+    },
+    "slotType" : "main",
+    "slots": [
+        ["type", "default", "description"],
+        ["sdd_cyber_body","sdd_cyber_body", "Body", {"coreSlot":true}],
+        ["paint_design","", "Paint Design"],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["sdd_cyber_mod", "", "Additional Modification"],
+    ],
+
+    "scaledragCoef":1.7,
+    "scalenodeWeight":1.5,
+	"scalebeamDeform":2.5,
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$brakestrength", "range", "", "Brakes", 1, 0.6, 1.0, "Brake Force Multiplier", "Scales the overall brake torque for this setup", {"minDis":60, "maxDis":100}],
+        ["$ffbstrength", "range", "", "Chassis", 1, 0.5, 1.5, "Setup-Specific Force Feedback Multiplier", "Scales the force feedback strength for THIS SETUP ONLY", {"minDis":50, "maxDis":150}],
+    ],
+	"controller": [
+        ["fileName"],
+		  ["vehicleController", {}],
+		
+        ["vivaceGauges", {"materialName": "@sdd_cyber_speed", "htmlPath": "local://local/vehicles/sdd_cyber/gauges_screen/gauges_screen_e.html", "type":"eSBR"}]
+        ["gauges/genericGauges", {"name":"gauges", }],
+        ["gauges/customModules/environmentData"],
+        ["gauges/customModules/electricMotorData"],
+        ["gauges/customModules/accelerationData"],
+        ["gauges/customModules/navigationData"],
+		//["sddGauges", {"materialName": "@sdd_gps_screen", "htmlPath": "local://local/vehicles/sdd_cyber/gps_screen/gauges_screen.html", "type":"eSBR"}]
+        ["gauges/genericGauges", {"name":"gps", }],
+        ["gauges/customModules/environmentData"],
+        ["gauges/customModules/electricMotorData"],
+        ["gauges/customModules/accelerationData"],
+        ["gauges/customModules/navigationData"],
+    ],
+
+    "gauges": {
+        "configuration": {
+            "materialName": "@sbr_gauge_screen"
+            "htmlPath": "local://local/vehicles/sdd_cyber/gauges_screen/gauges_screen.html"
+            "displayWidth":1024
+            "displayHeight":500
+            "maxKPH": 260,
+            "speedoMetricSepBig":50,
+            "speedoMetricSepSmall":10,
+            "maxMPH": 160,
+            "speedoImperialSepBig":20,
+            "speedoImperialSepSmall":5,
+        }
+        "displayData": {
+            "electrics": [
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",
+                "fuel",
+                "wheelspeed",
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsActive"
+            ]
+            "powertrain": [
+                ["deviceName", "property"]
+                //["mainEngine", "outputTorque1"]
+                //["mainEngine", "outputAV1"]
+                //["gearbox", "outputAV1"]
+            ]
+            "customModules": [
+                ["moduleName", "property"]
+                ["electricMotorData", "currentPower"],
+                ["electricMotorData", "remainingRange"],
+                ["electricMotorData", "consumptionGraph"],
+                ["environmentData", "temperatureEnv"]
+                ["accelerationData", "accelerationSmooth"]
+                ["navigationData", ""]
+            ]
+        },
+    },
+	"gps": {
+        "configuration": {
+            "materialName": "@sdd_cyber_nav"
+            "htmlPath": "local://local/vehicles/sdd_cyber/gps_screen/gauges_screen.html"
+            "displayWidth":1024
+            "displayHeight":500
+            "maxKPH": 260,
+            "speedoMetricSepBig":50,
+            "speedoMetricSepSmall":10,
+            "maxMPH": 160,
+            "speedoImperialSepBig":20,
+            "speedoImperialSepSmall":5,
+        }
+        "displayData": {
+            "electrics": [
+                "signal_L",
+                "signal_R",
+                "lights",
+                "highbeam",
+                "fog",
+                "lowpressure",
+                "lowfuel",
+                "parkingbrake",
+                "checkengine",
+                "gear",
+                "fuel",
+                "wheelspeed",
+                "esc",
+                "escActive",
+                "tcs",
+                "tcsActive"
+            ]
+            "powertrain": [
+                ["deviceName", "property"]
+                //["mainEngine", "outputTorque1"]
+                //["mainEngine", "outputAV1"]
+                //["gearbox", "outputAV1"]
+            ]
+            "customModules": [
+                ["moduleName", "property"]
+                ["electricMotorData", "currentPower"],
+                ["electricMotorData", "remainingRange"],
+                ["electricMotorData", "consumptionGraph"],
+                ["environmentData", "temperatureEnv"]
+                ["accelerationData", "accelerationSmooth"]
+                ["navigationData", ""]
+            ]
+        },
+    },
+    "glowMap":{
+            "sdd_cyber_brakelight_R":{"simpleFunction":{"brakelights":0.49}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_on_intense"},
+            "sdd_cyber_brakelight_L":{"simpleFunction":{"brakelights":0.49}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_on_intense"},
+            "sdd_cyber_signal_L":{"simpleFunction":{"signal_L":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_lights_signal", "on_intense":"sdd_cyber_lights_signal"},
+            "sdd_cyber_signal_R":{"simpleFunction":{"signal_R":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_lights_signal", "on_intense":"sdd_cyber_lights_signal"},
+            "sdd_cyber_chmsl":{"simpleFunction":{"brakelights":1}, "off":"invisible", "on":"sdd_cyber_tlights_on_intense", "on_intense":"sdd_cyber_tlights_on_intense"},
+			  "sdd_cyber_chmsl_L":{"simpleFunction":{"brakelights":0.49, "signal_L":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_tlights_on_intense", "on_intense":"sdd_cyber_lights_signal"},
+			    "sdd_cyber_chmsl_R":{"simpleFunction":{"brakelights":0.49, "signal_R":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_tlights_on_intense", "on_intense":"sdd_cyber_lights_signal"},
+				 "sdd_cyber_chmsl_L_alt":{"simpleFunction":{"brakelights":0.49, "signal_L":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_tlightsalt_on_intense", "on_intense":"RRpbrGlossBlack"},
+			    "sdd_cyber_chmsl_R_alt":{"simpleFunction":{"brakelights":0.49, "signal_R":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_tlightsalt_on_intense", "on_intense":"RRpbrGlossBlack"},
+            "sdd_cyber_headlight":{"simpleFunction":{"lowhighbeam":0.49,"highbeam":0.49}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on", "on_intense":"sdd_cyber_lights_on_intense"},
+			 "sdd_cyber_lowbeam":{"simpleFunction":{"highbeam":0.49}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on", "on_intense":"sdd_cyber_lights_on_intense"},
+            "sdd_cyber_drl":{"simpleFunction":{"running":0.1,"lowbeam":0.49,"highbeam":0.49}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_on"},
+            "sdd_cyber_drl_signal_L":{"simpleFunction":{"running":0.1,"lowhighbeam":-0.1,"signal_L":1.0}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_signal"},
+            "sdd_cyber_drl_signal_R":{"simpleFunction":{"running":0.1,"lowhighbeam":-0.1,"signal_R":1.0}, "off":"sdd_cyber_lights", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_signal"},
+            "sdd_cyber_fog":{"simpleFunction":{"fog":1}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_lights_on_intense", "on_intense":"sdd_cyber_lights_on_intense"},
+            "sdd_cyber_reverse":{"simpleFunction":{"reverse":0.49}, "off":"sdd_cyber_glass", "on":"sdd_cyber_lights_on", "on_intense":"sdd_cyber_lights_on"},
+            "generic_halogen_highbeam":{"simpleFunction":{"highbeam":1}, "off":"generic_halogen", "on":"generic_halogen_on", "on_intense":"generic_halogen_on_intense"},
+            "generic_halogen_glass_highbeam":{"simpleFunction":{"highbeam":1}, "off":"generic_halogen_glass", "on":"generic_halogen_glass_on", "on_intense":"generic_halogen_glass_on_intense"},
+            "sdd_cyber_taillight":{"simpleFunction":{"lowhighbeam":0.49, "brakelights":0.49}, "off":"sdd_cyber_tlights", "on":"sdd_cyber_tlights_on", "on_intense":"sdd_cyber_tlights_on"},
+			   "sdd_cyber_amber":{"simpleFunction":{"running":0.49}, "off":"sdd_cyber_glass", "on":"sdd_cyber_lights_signal", "on_intense":"sdd_cyber_lights_signal"},
+			      "sdd_cyber_navoverlay":{"simpleFunction":{"ignition":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_navoverlay", "on_intense":"sdd_cyber_navoverlay"},
+				     "sdd_cyber_speed":{"simpleFunction":{"ignition":0.49}, "off":"RRpbrGlossBlack", "on":"sdd_cyber_speed", "on_intense":"sdd_cyber_speed"},
+    },
+},
+"sdd_cyber_paint1_skin_steel": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stainless Steel",
+        "value":2000,
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "steel",
+},
+}

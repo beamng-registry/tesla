@@ -1,0 +1,42 @@
+{
+  "sdd_cyber_paint1.skin.steel": {
+    "name": "sdd_cyber_paint1.skin.steel",
+    "mapTo": "sdd_cyber_paint1.skin.steel",
+    "class": "Material",
+    "persistentId": "90ec600f-8bf5-4b20-b4c6-fc8e9c2254e4",
+   "Stages": [
+      {
+        "baseColorMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_BaseColor.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0.432999998,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Metallic.png",
+        "normalMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Normal.png",
+        "normalMapStrength": 1.07000005,
+        "roughnessMap": "/vehicles/sdd_cyber/textures/untitled_sdd_cyber_paint1_Roughness.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+}
