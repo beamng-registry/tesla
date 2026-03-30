@@ -36,7 +36,7 @@ jobs:
 
       - name: Replace LAZ695N Lua scripts
         run: |
-          cp -R "$GITHUB_WORKSPACE/vehicles/sdd_cyber" "$RUNNER_TEMP/reference-package/vehicles/sdd_cyber"
+          cp -R "$GITHUB_WORKSPACE/vehicles/sdd_cyber" "$RUNNER_TEMP/reference-package/vehicles"
 
       - name: Create zip archive
         run: |
